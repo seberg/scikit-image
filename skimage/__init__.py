@@ -182,3 +182,7 @@ from skimage._shared.tester import PytestTester  # noqa
 
 test = PytestTester(__name__)
 del PytestTester
+
+from . import _backends
+
+del _backends

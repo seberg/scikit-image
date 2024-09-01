@@ -4,8 +4,10 @@ import numpy as np
 from scipy import ndimage as ndi
 
 from .rank import generic
+from .._backends import dispatchable
 
 
+@dispatchable("image", "footprint", "out")
 def median(
     image, footprint=None, out=None, mode='nearest', cval=0.0, behavior='ndimage'
 ):

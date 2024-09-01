@@ -16,11 +16,13 @@ from .._shared.utils import (
     deprecate_parameter,
     DEPRECATED,
 )
+from .._backends import dispatchable
 
 
 @deprecate_parameter(
     "output", new_name="out", start_version="0.23", stop_version="0.25"
 )
+@dispatchable
 def gaussian(
     image,
     sigma=1,

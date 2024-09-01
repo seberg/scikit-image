@@ -207,3 +207,8 @@ ignored_user_logins = [
     "web-flow",
     "pre-commit-ci[bot]"
 ]
+
+
+# TODO: This of course would live inside of cucim!
+[project.entry-points.skimage_backends]
+backend_info = 'skimage.cucim_backend:backend_info'
