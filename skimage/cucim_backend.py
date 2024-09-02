@@ -4,7 +4,7 @@ import importlib
 
 backend_info = {
     "name": "my_backend",
-    "types": ["numpy:matrix"],
+    "types": ["cupy:ndarray"],
     "symbol_mapping": {},
 }
 
