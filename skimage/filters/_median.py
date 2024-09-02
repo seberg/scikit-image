@@ -7,7 +7,7 @@ from .rank import generic
 from .._backends import dispatchable
 
 
-@dispatchable("image", "footprint", "out")
+@dispatchable("image", "footprint", "out", module="skimage.filters")
 def median(
     image, footprint=None, out=None, mode='nearest', cval=0.0, behavior='ndimage'
 ):
